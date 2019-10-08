@@ -316,12 +316,8 @@
 </footer>
 
 <script type="text/javascript">
-    getDeviceParameter = function() {
-        return window.innerWidth <= 800 && window.innerHeight <= 600 ? '566615' : '483323';
-    }
-
     window.onload = function(){
-        const url='https://logs1257.at.pagesjaunes.fr/hit.xiti?s='+getDeviceParameter()+'&s2=7&p=REPONSE_PRO::erreur_technique';
+        const url='https://at.pagesjaunes.fr/wa.pj?s=607216&p=DATADOME::CAPTCHA&ts='+Date.now();
         document.getElementById('tag').src = url;
     }
 </script>
