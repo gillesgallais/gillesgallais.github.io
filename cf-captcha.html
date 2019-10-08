@@ -1,0 +1,331 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="fr"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="fr"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="fr"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="fr"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+
+<head id="head">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+
+    <title id="metaTitle">
+        PagesJaunes : Trouvez plus que des coordonnées.
+    </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        html{
+            font-size: 10px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 1.6rem;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.3;
+        }
+        .metanav {
+            position: relative;
+            width: 100%;
+            height: 7.5rem;
+            background-color: #000;
+        }
+        .metanav label {
+            cursor: pointer;
+        }
+        .menu {
+            position: relative;
+        }
+        .lien-pagesjaunes, .lien-secondaire {
+            display: inline-block;
+            margin-bottom: 0;
+            height: 7.5rem;
+            line-height: 7.5rem;
+            color: #fff;
+        }
+        .visible-phone {
+            display: none;
+        }
+        .lien-secondaire {
+            margin-left: 4rem;
+            color: #999;
+        }
+        h1 .icon, .h1 .icon, h2 .icon, .h2 .icon, h3 .icon, .h3 .icon, h4 .icon, .h4 .icon, h5 .icon, .h5 .icon, h6 .icon, .h6 .icon, p .icon, a .icon, ol .icon, ul .icon, li .icon, .txt_article .icon {
+            font-size: inherit;
+        }
+        a {
+            color: #0078ff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .lien-pagesjaunes:hover, .lien-secondaire:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        .lien-pagesjaunes img {
+            margin: 1.35rem 1.6rem 1.35rem 1.35rem;
+            width: 4.8rem;
+            height: 4.8rem;
+            float: left;
+        }
+        .lien-pagesjaunes .icon-pagesjauneslogo {
+            color: #fff;
+        }
+        .main-content-container,
+        .footer.container {
+            padding: 0 1rem;
+        }
+        .cf-open-details {
+            cursor: pointer;
+        }
+        .cf-details{
+            display: none;
+        }
+        input#open-details:checked ~ .cf-details {
+            display: block;
+        }
+        #footer {
+            position: relative;
+            padding: 0;
+            z-index: 2;
+        }
+        .footer-groupe {
+            padding: 6rem 1rem;
+        }
+        .footer-groupe .wrapper {
+            display: table;
+            padding: 1rem 0;
+        }
+        .footer-groupe-pj {
+            margin: auto;
+            width: 60%;
+            float: left;
+        }
+        .logo-pj {
+            margin-right: 0.5rem;
+            width: 11.5rem;
+            height: auto;
+        }
+        .logo-pj-visible-phone {
+            display: none;
+        }
+        .footer-groupe p, .footer-groupe a {
+            font-size: 1.1rem;
+            display: inline-block;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .grey {
+            color: #999999;
+        }
+
+        @media only screen and (min-width: 48em){
+            .container{
+                margin: 0 auto;
+                width: 100%;
+            }
+            .main-content-container {
+                min-height: calc(100vh - 24.2rem);
+            }
+            .footer-groupe {
+                width: auto;
+            }
+            .footer-groupe .wrapper {
+                width: 100%;
+            }
+            .footer-groupe-pj {
+                margin: auto;
+                width: 60%;
+                float: left;
+            }
+            .footer-groupe-solocal {
+                margin: auto;
+                padding: 0;
+                float: right;
+                width: 40%;
+                text-align: right;
+            }
+        }
+        @media only screen and (max-width: 47.938em){
+            .visible-phone {
+                display: block;
+            }
+            .hidden-phone {
+                display: none;
+            }
+            img {
+                max-width: 100%;
+            }
+            .metanav {
+                height: 6rem;
+                z-index: 1;
+            }
+            .main-content-container {
+                min-height: calc(100vh - 12.7rem);
+            }
+            .lien-pagesjaunes {
+                height: 6rem;
+                line-height: 6rem;
+            }
+            .lien-pagesjaunes img {
+                margin: 0.8rem 1.6rem 0.8rem 0.8rem;
+                width: 4.4rem;
+                height: 4.4rem;
+            }
+            .lien-secondaire {
+                display: none;
+                margin: 0;
+                width: 100%;
+                height: 4.9rem;
+                padding: 0 1.6rem;
+                line-height: 4.8rem;
+                background-color: #333;
+            }
+            .lien-secondaire .icon {
+                display: none;
+            }
+            .burger {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 2.4rem 1.8rem;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                color: #999;
+            }
+            input#open-burger:checked ~ .burger {
+                background-color: #333;
+            }
+            input#open-burger:checked ~ .lien-secondaire {
+                display: block;
+            }
+            h1, .h1 {
+                margin-bottom: 1.6rem;
+                font-size: 2.4rem;
+                font-weight: bold;
+            }
+            h2, .h2 {
+                margin-bottom: 0.8rem;
+                font-size: 2.2rem;
+                font-weight: normal;
+            }
+            h3, .h3 {
+                margin-bottom: 0.8rem;
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+            p {
+                margin-bottom: 0.8rem;
+                font-size: 1.4rem;
+            }
+            .footer-groupe {
+                margin: 0 0 4rem;
+                padding: 0;
+            }
+            .footer-groupe .wrapper {
+                padding: 1rem 3rem;
+            }
+            .footer-groupe-pj {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            .footer-groupe-pj p, .footer-groupe-pj .logo-pj-visible-phone {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .footer-groupe-pj .logo-pj-visible-phone {
+                margin-right: 1.5rem;
+                width: 3.9rem;
+                height: 3.9rem;
+            }
+            .footer-groupe-pj p, .footer-groupe-pj .logo-pj-visible-phone {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        @media only screen and (min-width: 61.25em){
+            .container{
+                width: 100rem;
+            }
+            .lien-pagesjaunes img {
+                margin: 1.35rem 1.6rem 1.35rem 0;
+            }
+            .footer-groupe {
+                padding: 6rem 0;
+            }
+        }
+
+    </style>
+
+    <link rel="icon" type="image/x-icon" href="https://www.pagesjaunes.fr/favicon.ico" />
+
+</head>
+
+<body class="is_desktop page-temporaire homepage pagesjaunes noscroll" >
+
+<header id="metanav" class="metanav">
+    <div class="container">
+        <div class="menu">
+            <a href="#" class="lien-pagesjaunes">
+                <img class="logo" alt="imgLogoPagesJaunes" src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FscXVlXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyMCAxMjAiPjxzdHlsZT4uc3Qxe2ZpbGw6IzA0MDUwNX08L3N0eWxlPjxwYXRoIGQ9Ik0xMDguNCAxMTYuMUgxMS42Yy02LjQgMC0xMS42LTUuMi0xMS42LTExLjZ2LTg5QzAgOS4xIDUuMiAzLjkgMTEuNiAzLjloOTYuOGM2LjQgMCAxMS42IDUuMiAxMS42IDExLjZ2ODljMCA2LjQtNS4yIDExLjYtMTEuNiAxMS42eiIgZmlsbD0iI2ZjZWIyMyIvPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yOS45IDUyLjRjLTIuOCAwLTUtMi4yLTUtNC45di01LjZjMC0yLjggMi4zLTUgNS01czUgMi4zIDUgNXY1LjVjMCAyLjgtMi4yIDUtNC45IDVoLS4xek02MS4xIDk2LjljLTQuNiAwLTkuMi0uOC0xMy41LTIuMy04LjYtMy0xNi4yLTguNC0yMS45LTE1LjYtMS43LTIuMi0xLjMtNS4zLjktNy4xIDIuMS0xLjcgNS4zLTEuNCA3IC44IDAgMCAwIC4xLjEuMSA5IDExLjQgMjQuMSAxNi43IDM1LjkgMTIuNyAxMS0zLjggMTctMTQuNyAxNy0zMC43VjQxLjljMC0yLjggMi4yLTUgNS01czUgMi4yIDUgNXYxMi45YzAgMjAuNC04LjcgMzUtMjMuOCA0MC4yLTMuOCAxLjMtNy43IDEuOS0xMS43IDEuOXoiLz48L3N2Zz4=" />
+                PagesJaunes
+            </a>
+            <input id="open-burger" type="checkbox" hidden="">
+            <label for="open-burger" class="visible-phone burger">Menu</label>
+
+        </div>
+    </div>
+</header>
+
+<section class="main-content-container container clearfix">
+    <img id="tag" src="" />
+    <div class="no-response">
+        <h1 class="error-name">Sécurité</h1>
+        <p>Afin de nous aider à lutter contre certaines attaques informatiques, veuillez compléter le "challenge" suivant.</p>
+    </div>
+    <div>
+        ::CAPTCHA_BOX::
+    </div>
+</section>
+
+<footer id="footer" class="container footer" role="contentinfo">
+    <div class="footer-groupe container">
+        <div class="wrapper">
+            <div class="footer-groupe-pj">
+                <p>PagesJaunes est une marque de SoLocal Group ©2019</p>
+            </div>
+            <div class="footer-groupe-solocal hidden-phone">
+                <a href="https://solocal.com/rejoignez-nous" title="Recrutement nouvelle fenêtre">Recrutement</a>
+                |
+                <a href="https://solocal.com/charte" class="charte" title="Charte du groupe nouvelle fenêtre">Charte du groupe</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    getDeviceParameter = function() {
+        return window.innerWidth <= 800 && window.innerHeight <= 600 ? '566615' : '483323';
+    }
+
+    window.onload = function(){
+        const url='https://logs1257.at.pagesjaunes.fr/hit.xiti?s='+getDeviceParameter()+'&s2=7&p=REPONSE_PRO::erreur_technique';
+        document.getElementById('tag').src = url;
+    }
+</script>
+
+</body>
+
+</html>
